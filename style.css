@@ -1,0 +1,61 @@
+/*CREATED BY MOHAMED AYMAN*/
+/*WEB.END*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.inputbx{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+input{
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    background: rgb(51, 47, 47);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color: #fff;
+}
+
+.show{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.show .eye-off{
+    display: none;
+}
+
+.show.hide  .eye{
+    display: none;
+}
+
+.show.hide .eye-off{
+    display: flex;
+}

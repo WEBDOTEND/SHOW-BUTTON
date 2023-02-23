@@ -1,0 +1,33 @@
+<!--CREATED BY MOHAMED AYMAN-->
+<!--WEB.END-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOW-BUTTON</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script></head>
+<body>
+    <div class="inputbx">
+        <input type="password" placeholder="PASSWORD" id="password">
+        <div class="show"><ion-icon class="eye" name="eye-outline"></ion-icon><ion-icon class="eye-off" name="eye-off-outline"></ion-icon></div>
+    </div>
+    <script>
+        let passw = document.querySelector('#password');
+        let show = document.querySelector('.show');
+        show.onclick = function(){
+            if(passw.type === 'password'){
+                passw.setAttribute('type','text');
+                show.classList.add('hide');
+            }
+            else{
+                passw.setAttribute('type','password');
+                show.classList.remove('hide');
+            }
+        }
+    </script>
+</body>
+</html>
